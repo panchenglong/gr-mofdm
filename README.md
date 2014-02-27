@@ -24,16 +24,20 @@ GNU Radio v3.7 is needed, no other extra modules needed.
 
 # Running
 Connect two machines A, B to their own usrp2. Then on machine A, do
+
     cd gr-mofdm/apps
     ./run-rx.sh
 
 On machine B, do
+
     cd gr-mofdm/apps
     ./run-tx.sh
 
 Then, on machine B, you can ping A with 
+
     ping 192.168.123.2
 and on machine A, you can ping B with
+
     ping 192.168.123.1
 
 The ouput is the sent and received message.
