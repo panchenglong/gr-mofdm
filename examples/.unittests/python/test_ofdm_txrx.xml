@@ -1,0 +1,53 @@
+<testsuite errors="4" failures="0" name="unittest.suite.TestSuite" tests="5" time="0.041">
+  <testcase classname="__main__.test_ofdm_txrx" name="test_001_tx" time="0.0065"></testcase>
+  <testcase classname="__main__.test_ofdm_txrx" name="test_002_rx_only_noise" time="0.0062">
+    <error type="exceptions.NameError">global name 'header_descrambler' is not defined
+  File "/usr/lib/python2.7/unittest/case.py", line 327, in run
+    testMethod()
+  File "./qa_ofdm_txrx_3_7_2.py", line 103, in test_002_rx_only_noise
+    rx_fg = ofdm_rx_fg(samples, len_tag_key, channel)
+  File "./qa_ofdm_txrx_3_7_2.py", line 55, in __init__
+    self.rx = ofdm_rx(frame_length_tag_key=len_tag_key, debug_log=LOG_DEBUG_INFO, scramble_bits=scramble_bits)
+  File "/usr/local/lib/python2.7/dist-packages/gnuradio/digital/ofdm_txrx.py", line 396, in __init__
+    self.connect(header_descrambler, blocks.file_sink(1,                             'post-hdr-demod.dat'))
+    </error>
+  </testcase>
+  <testcase classname="__main__.test_ofdm_txrx" name="test_003_tx1packet" time="0.0086">
+    <error type="exceptions.NameError">global name 'header_descrambler' is not defined
+  File "/usr/lib/python2.7/unittest/case.py", line 327, in run
+    testMethod()
+  File "./qa_ofdm_txrx_3_7_2.py", line 123, in test_003_tx1packet
+    rx_fg = ofdm_rx_fg(tx_samples, len_tag_key, channel, prepend_zeros=100)
+  File "./qa_ofdm_txrx_3_7_2.py", line 55, in __init__
+    self.rx = ofdm_rx(frame_length_tag_key=len_tag_key, debug_log=LOG_DEBUG_INFO, scramble_bits=scramble_bits)
+  File "/usr/local/lib/python2.7/dist-packages/gnuradio/digital/ofdm_txrx.py", line 396, in __init__
+    self.connect(header_descrambler, blocks.file_sink(1,                             'post-hdr-demod.dat'))
+    </error>
+  </testcase>
+  <testcase classname="__main__.test_ofdm_txrx" name="test_003_tx1packet_scramble" time="0.0087">
+    <error type="exceptions.NameError">global name 'header_descrambler' is not defined
+  File "/usr/lib/python2.7/unittest/case.py", line 327, in run
+    testMethod()
+  File "./qa_ofdm_txrx_3_7_2.py", line 145, in test_003_tx1packet_scramble
+    rx_fg = ofdm_rx_fg(tx_samples, len_tag_key, channel, prepend_zeros=100, scramble_bits=True)
+  File "./qa_ofdm_txrx_3_7_2.py", line 55, in __init__
+    self.rx = ofdm_rx(frame_length_tag_key=len_tag_key, debug_log=LOG_DEBUG_INFO, scramble_bits=scramble_bits)
+  File "/usr/local/lib/python2.7/dist-packages/gnuradio/digital/ofdm_txrx.py", line 396, in __init__
+    self.connect(header_descrambler, blocks.file_sink(1,                             'post-hdr-demod.dat'))
+    </error>
+  </testcase>
+  <testcase classname="__main__.test_ofdm_txrx" name="test_004_tx1packet_large_fO" time="0.0109">
+    <error type="exceptions.NameError">global name 'header_descrambler' is not defined
+  File "/usr/lib/python2.7/unittest/case.py", line 327, in run
+    testMethod()
+  File "./qa_ofdm_txrx_3_7_2.py", line 168, in test_004_tx1packet_large_fO
+    rx_fg = ofdm_rx_fg(tx_samples, len_tag_key, channel, prepend_zeros=100)
+  File "./qa_ofdm_txrx_3_7_2.py", line 55, in __init__
+    self.rx = ofdm_rx(frame_length_tag_key=len_tag_key, debug_log=LOG_DEBUG_INFO, scramble_bits=scramble_bits)
+  File "/usr/local/lib/python2.7/dist-packages/gnuradio/digital/ofdm_txrx.py", line 396, in __init__
+    self.connect(header_descrambler, blocks.file_sink(1,                             'post-hdr-demod.dat'))
+    </error>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
