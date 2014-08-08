@@ -42,7 +42,7 @@ and on machine A, you can ping B with
 
 The ouput is the sent and received message.
 
-# More to say 
+# Misc... 
 This work is in progress, SNR statistics and channel coding will be added soon. I will make the output infomation more readable first.
 
 I think this work will replace the infamous tunnel.py in GNU Radio. It nearly drives me crazy.
